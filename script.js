@@ -95,7 +95,7 @@ function displayProducts(filteredProducts) {
                 <span class="product-category">${categoryNames[product.category]}</span>
                 <h3 class="product-title">${product.title}</h3>
                 <p class="product-price"><span>Valor de referência</span>${formatCurrency(product.estimatedValue)}</p>
-                <button class="view-btn" onclick="openModal(${product.id})" aria-label="Ver detalhes: ${product.title}">Ver detalhes <span aria-hidden="true">↗</span></button>
+                <button class="view-btn" onclick="openModal(${product.id})" aria-label="Ver detalhes: ${product.title}">Ver detalhes <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></button>
             </div>
         </article>
     `).join('');
@@ -306,3 +306,4 @@ function crc16(str) {
   }
   return crc.toString(16).toUpperCase().padStart(4, "0");
 }
+
