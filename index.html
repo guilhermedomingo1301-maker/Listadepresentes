@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header"><a class="monogram" href="#" aria-label="Rita e Guilherme, início">R <span>&</span> G</a><nav aria-label="Navegação principal"><a href="#presentes">Os presentes</a><a href="#pix-section">Presentear <span aria-hidden="true">↗</span></a></nav></header>
   <main class="container">
     <section class="card hero">
-      <p class="small">Lista de Presentes</p>
-      <h1>Rita & Guilherme </h1>
+      <div class="hero-ornament" aria-hidden="true">❧</div>
+      <p class="small">Um novo capítulo, juntos</p>
+      <h1>Rita <span>&</span> Guilherme</h1>
+      <p class="hero-description">O nosso maior presente é ter você por perto.<br>Com carinho, compartilhamos os sonhos para o nosso novo lar.</p>
+      <div class="hero-actions">
+        <a class="hero-link" href="#presentes">Conheça nossa lista <span aria-hidden="true">↓</span></a>
+        <a class="hero-link" href="#momentos">Criar memórias <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-caption"><span></span> NOSSO LAR COMEÇA COM AMOR <span></span></div>
     </section>
 
 
-    <section class="card">
-      <h2>Lista de Presentes (Referências)</h2>
+    <section class="card gifts-section" id="presentes">
+      <p class="small">Escolhidos com carinho</p>
+      <div class="section-heading"><h2>Para o nosso novo lar</h2><span id="product-count" class="product-count"></span></div>
       <p class="text">Preparamos esta vitrine para servir de referência do que gostaríamos para o nosso novo lar. Você pode visualizar os modelos e nos ajudar contribuindo com o valor gerando um Pix abaixo!</p>
       
       <div class="filters">
@@ -29,9 +38,48 @@
         </div>
     </section>
 
+    <section class="card experiences-section" id="momentos" aria-labelledby="momentos-title">
+      <p class="small">Além do nosso lar</p>
+      <h2 id="momentos-title">Ajude a criar nossas memórias</h2>
+      <p class="text">Você também pode fazer parte da nossa primeira viagem juntos e dos detalhes que vão tornar a nossa celebração especial. Escolha um carinho e contribua com o valor que desejar.</p>
+      <div class="experiences-grid">
+        <article class="experience-card">
+          <div class="experience-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 35h32M12 30l24-13-2-5-12 4-8-6-4 2 6 7-8 5zM32 7l3-3"/></svg></div>
+          <span class="product-category">Nossa primeira aventura</span>
+          <h3>Lua de mel</h3>
+          <p>Um passeio, um jantar a dois ou um pedacinho da viagem que vamos guardar para sempre.</p>
+          <button type="button" onclick="selecionarContribuicao('lua-mel')">Ajudar na lua de mel <span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="experience-card">
+          <div class="experience-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 40V23M24 30l-9-6M24 34l9-7M24 8c-5-9-14 0-7 6-9 0-9 12 0 11-3 8 9 11 10 3 7 5 14-5 7-9 9-5 2-15-5-10-1-6-5-6-5-1z"/></svg></div>
+          <span class="product-category">Detalhes cheios de amor</span>
+          <h3>Preparativos da festa</h3>
+          <p>Uma contribuição para as flores, a decoração e os pequenos detalhes do nosso grande dia.</p>
+          <button type="button" onclick="selecionarContribuicao('preparativos')">Ajudar nos preparativos <span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="experience-card">
+          <div class="experience-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 22h28v18H10zM7 15h34v7H7zM24 15v25M24 15C8 16 12 2 19 7c3 2 5 8 5 8zm0 0c16 1 12-13 5-8-3 2-5 8-5 8z"/></svg></div>
+          <span class="product-category">Para celebrar juntos</span>
+          <h3>Mimos da celebração</h3>
+          <p>Ajude com o bolo, os docinhos e as lembranças que vão deixar esse encontro ainda mais doce.</p>
+          <button type="button" onclick="selecionarContribuicao('celebracao')">Ajudar na celebração <span aria-hidden="true">↗</span></button>
+        </article>
+      </div>
+    </section>
+
     <section class="card" id="pix-section">
+      <p class="small">Um gesto que vira memória</p>
       <h2>Contribuir com Pix</h2>
       <p class="text">Escolha um valor ou clique em um item da vitrine acima para transferir o valor do presente desejado:</p>
+      <div class="pix-fields">
+      <div class="pix-choice">
+      <label for="destinoPresente">Seu carinho é para</label>
+      <select id="destinoPresente">
+        <option value="lar">Nosso novo lar</option>
+        <option value="lua-mel">Lua de mel</option>
+        <option value="preparativos">Preparativos da festa</option>
+        <option value="celebracao">Mimos da celebração</option>
+      </select>
 
       <div class="valores">
         <button onclick="selecionarValor(120)">R$ 120</button>
@@ -40,27 +88,34 @@
         <button onclick="selecionarValor(250)">R$ 250</button>
       </div>
 
-      <label>Valor livre</label>
-      <input id="valorLivre" type="number" placeholder="Digite outro valor ou o valor do item" />
+      </div>
+      <div class="pix-value">
+      <label for="valorLivre">Valor livre</label>
+      <input id="valorLivre" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="Digite o valor que desejar" />
       <button onclick="usarValorLivre()">Gerar Pix</button>
 
-      <label>Escolha a chave Pix</label>
-      <select id="chavePix">
-        <option value="a4094d9c-fa16-4ec4-bbab-24322b280c4a">Chave aleatória</option>
-      </select>
+      </div>
+      </div>
 
       <div id="pixArea" class="pix-area hidden">
-        <h3>Pix gerado</h3>
+        <div class="pix-result-heading">
+        <h3>Seu presente está quase pronto</h3>
+        <p class="text">Escaneie o QR Code ou copie o código para o aplicativo do seu banco.</p>
+        </div>
         <div id="qrcode"></div>
-        <textarea id="pixCopiaCola" readonly></textarea>
-        <button onclick="copiarPix()">Copiar código Pix</button>
+        <div class="pix-copy">
+        <textarea id="pixCopiaCola" aria-label="Código Pix copia e cola" readonly></textarea>
+        <button id="copy-pix-btn" onclick="copiarPix()">Copiar código Pix</button>
+        <p id="copy-status" class="copy-status" role="status"></p>
+        </div>
       </div>
     </section>
   </main>
+  <footer>Com amor, <span>Rita & Guilherme</span><p>Obrigada por fazer parte da nossa história.</p></footer>
 
-  <div class="modal" id="gift-modal">
-    <div class="modal-content">
-      <button class="close-modal">&times;</button>
+  <div class="modal" id="gift-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="close-modal" aria-label="Fechar detalhes">&times;</button>
       <div id="modal-icon-container" style="font-size: 4rem; text-align: center; margin-bottom: 10px;"></div>
       <h2 id="modal-title">Nome do Produto</h2>
       <p class="modal-category" id="modal-category">Categoria</p>
