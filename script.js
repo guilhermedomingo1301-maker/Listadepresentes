@@ -1,5 +1,6 @@
 let contadorAcompanhantes = 0;
 const telefoneWhatsApp = "5582988369610";
+const chavePix = "a4094d9c-fa16-4ec4-bbab-24322b280c4a";
 
 // Vitrine de Presentes com valores estimados de referência
 const products = [
@@ -8,7 +9,7 @@ const products = [
         title: "Cozinha Compacta Luna sem Tampo",
         category: "cozinha",
         imageUrl: "https://m.magazineluiza.com.br/a-static/420x420/cozinha-compacta-luna-sem-tampo-e-pia-kappesberg-3-pecas-canela-verde-oliva/grupok1sa/r780-cnve/2c391bb99aee78ef2668193da2d6e3d6.jpeg",
-        estimatedValue: 1.104 ,
+        estimatedValue: 1104,
         description: "Cozinha Compacta Luna sem Tampo e Pia Kappesberg 3 Peças Canela/Verde Oliva."
     },
     {
@@ -29,11 +30,11 @@ const products = [
     },
     {
         id: 4,
-        title: "Geladeira Electrolux Frost Free",
-        category: "cozinha",
-        imageUrl: "data:image/webp;base64,UklGRmIEAABXRUJQVlA4IFYEAACwJACdASrNAM8APj0ejEQiIaGTm1zcIAPEtLdfOEB/j8K7lNah7JbzvBLylq9pWw38ac6VpBLnRrCYvg9TBf/b8lZodlQZMB1cfxkb5WJ57qfbRflVmqrVBwy8QVuAvMEsvrz6ULOVEIM50u/QixKqS1q48/2DLTIMbSDbGzd3iXUB4FPye2M1KJBebTrP1IZo0xKVhyjo8qP1Bwy8QTKYQ8MfYiPsxrzR9WNz3yU0mdBwy7zlZ1C23agVy8Wqp9ApiRUB9DANviJeLU9Dj+iUTfL31ExFsqDJgeB44orWLswvakQLJtIxWt/YZtqMmJFLl/mzwi8dR/ydGi49Bwy73jo/tr/vJXs4IYJcIAVNnjB3iGaJLWIi2kU+QP2/hvgAHTGDRv6bdqtoCEGUAAD+/3jzi79NFE3fgdsZaY49UX8Vu8fG+WLxh+kikMn9jKe8wKdPoF0S03atv6HoNC0qrVwKbivSnXvDQrxDDuimpi1BCpKmwM9dLFUCJQCtK+WQUum5tyjAHnxigOU445GlTaFIxtXXj4Gk9Kb6HU1i8u4DQCDsY1N4/NLxXNrvqin7E3149/x6dMUlSirq8L5Hx1nPzwK66chUYlaJovq7HRoDKdUydr4/D/kcQOHlbWQHCcBs+92JnnqN1bc5SE418xq15Uu4gY72qL7DqiqjLuaMghQiQSo4aHPJWWQoKfj+vQKsylW0E/XPjC3ze7fjCWZILT78W7QhwGWnd0YnEz32kaWSyP8sEvuxnWtyyZbtWWC6uUEugtsY1RXkvtNviq4PN12+YWfLzT/naverl/kg0Tn00IFv/9Yw9U/SKey8AxZwIFj8dWiezGvtEJ6FejklVgPOI3hb+jYe+mrhmOjErah5nEX+QmDMRVv84cFrQJOsmWACRp73wVdzfeQyunyah5S/fVK+tP0ma5/GKAaCpbNr/Fl093XGv9td+MvjGKhedKRfVNMA2budJD8uvM/PxWOTwWhcL/T2Ag7WFy2whpHVb6HQs5Mjg/PBEzDP3ftsQ6h4Qgp3cXc1IUO2vrjY2Frm3ED1WTuP/VENkmExW0AIEYBf/M3sAxSZuv6/0dlH1JFSVfjb+Ec7sIBmjHBt7qq/Tssdo7QFgvoVL2K3wQEsoGcxfO4YcnGmjVheu6n3u8TuvAMPxOPtni/BWbF85GyPaS9eSh6vaXy7iTmr1EYFdem43++P/T/A+HAgje8BviDAAufM+M/O4BZzJYQPFQ0SNXRqNyirncpFErm/I4oa6syjk1LiwPeVpABviQ+5FcLIViz252yTExp/Z+IRfsolFokcFiUBzZgcyLEGAUqpiutOzmRPqov9SOnKHyKGTbqyvtEglV9fOyJhWKmwddYiiC34xh2WEbmbWI+nPiig7pWFx1T4gc1rmK75geImrU7Auu96w8T+vbt3W10WMakr/Y5o13nySH3aSL9+DMwP2TyS5uIywPzP+PbZxk6JAAA=",
-        estimatedValue: 2.499,
-        description: "A Geladeira Electrolux Frost Free 320L Gaveta Hortifruti Duplex Inox Look (TF38S)."
+        title: "Rack Para Sala",
+        category: "sala",
+        imageUrl: "https://http2.mlstatic.com/D_Q_NP_667278-MLA112069922603_052026-F.webp",
+        estimatedValue: 549,
+        description: "O Rack Flynt é ideal para TVs de até 75, combinando funcionalidade e estilo."
     },
     {
         id: 5,
@@ -49,15 +50,23 @@ const products = [
         category: "eletro",
         imageUrl: "https://imgs.casasbahia.com.br/55071897/2xg.jpg?imwidth=500?imwidth=828",
         estimatedValue: 889,
-        description: "Airfryer digital espaçosa para nos ajudar a preparar refeições deliciosas e saudáveis rapidamente."
+        description: "Smart TV Philco de 32 polegadas com Roku TV, HDR10 e Dolby Audio, para os nossos momentos de descanso juntos."
     },
     {
         id:7,
         title: "Sofá Retrátil",
         category: "sala",
         imageUrl: "https://m.magazineluiza.com.br/a-static/420x420/sofa-retratil-reclinavel-3-lugares-suede-phormatta-evolution-smp/magazineluiza/121927508/987f3445d9028df111ea28c07dfa54a9.jpg",
-        estimatedValue: 1.195,
+        estimatedValue: 1195,
         description: "Madeira Pinus e Eucalipto 100% Reflorestada.",
+    },
+    {
+        id:8,
+        title: "Máquina de Lavar",
+        category: "eletro",
+        imageUrl: "https://m.magazineluiza.com.br/a-static/420x420/maquina-de-lavar-electrolux-11kg-branca-essential-care-com-easy-clean-e-filtro-fiapos-les11/electrolux/2004292/965433ed92fb6f8751db817886356e74.jpg",
+        estimatedValue: 1519,
+        description: "Máquina de Lavar Electrolux 11kg Branca Essential Care com Easy Clean e Filtro Fiapos",
     },
 
 ];
@@ -66,29 +75,41 @@ const productsGrid = document.getElementById('products-grid');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const modal = document.getElementById('gift-modal');
 const closeModalBtn = document.querySelector('.close-modal');
+const formatCurrency = value => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+const categoryNames = { cozinha: 'Cozinha', sala: 'Sala', eletro: 'Eletro' };
+let lastFocusedElement;
+function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    lastFocusedElement?.focus({ preventScroll: true });
+}
 
 function displayProducts(filteredProducts) {
     if(!productsGrid) return;
-    productsGrid.innerHTML = filteredProducts.map(product => `
-        <div class="product-card">
-            <div class="product-image"><img src=${product.imageUrl} alt="${product.title}" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+    document.getElementById('product-count').textContent = `${filteredProducts.length} presentes`;
+    productsGrid.innerHTML = filteredProducts.map((product, index) => `
+        <article class="product-card" style="--delay: ${index * 45}ms">
+            <button type="button" class="product-image" onclick="openModal(${product.id})" aria-label="Ver detalhes: ${product.title}"><img src="${product.imageUrl}" alt="${product.title}" loading="lazy" /></button>
             <div class="product-info">
-                <span class="product-category">${product.category}</span>
+                <span class="product-category">${categoryNames[product.category]}</span>
                 <h3 class="product-title">${product.title}</h3>
-                <p style="font-size:13px; color:var(--color-700); font-weight:bold; margin-bottom:8px;">Ref: R$ ${product.estimatedValue}</p>
-                <button class="view-btn" onclick="openModal(${product.id})">Ver Detalhes</button>
+                <p class="product-price"><span>Valor de referência</span>${formatCurrency(product.estimatedValue)}</p>
+                <button class="view-btn" onclick="openModal(${product.id})" aria-label="Ver detalhes: ${product.title}">Ver detalhes <span aria-hidden="true">↗</span></button>
             </div>
-        </div>
+        </article>
     `).join('');
 }
 
 displayProducts(products);
+filterBtns.forEach(btn => btn.setAttribute('aria-pressed', String(btn.classList.contains('active'))));
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        const category = e.target.dataset.category;
+        filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        const category = btn.dataset.category;
         if (category === 'all') {
             displayProducts(products);
         } else {
@@ -103,23 +124,38 @@ function openModal(id) {
     const product = products.find(p => p.id === id);
     if (product) {
         document.getElementById('modal-title').innerText = product.title;
-        document.getElementById('modal-category').innerText = product.category;
+        document.getElementById('modal-category').innerText = `${categoryNames[product.category]} · ${formatCurrency(product.estimatedValue)}`;
         document.getElementById('modal-description').innerText = product.description;
         document.getElementById('modal-icon-container').innerHTML = `<img src="${product.imageUrl}" alt="${product.title}" style="width: 100%; max-height: 200px; object-fit: contain; display: block; margin: 0 auto 15px;" />`;
         currentProductValue = product.estimatedValue;
+        lastFocusedElement = document.activeElement;
         modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+        closeModalBtn.focus();
     }
 }
 
 document.getElementById('modal-contribute-btn').addEventListener('click', () => {
-    modal.classList.remove('active');
+    closeModal();
+    document.getElementById('destinoPresente').value = 'lar';
     document.getElementById('valorLivre').value = currentProductValue;
-    document.getElementById('pix-section').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('pix-section').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     gerarPix(currentProductValue);
 });
 
-closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
-window.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
+closeModalBtn.addEventListener('click', closeModal);
+window.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', event => {
+    if (!modal.classList.contains('active')) return;
+    if (event.key === 'Escape') closeModal();
+    if (event.key === 'Tab') {
+        const first = closeModalBtn;
+        const last = document.getElementById('modal-contribute-btn');
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+});
 
 function adicionarAcompanhante() {
   contadorAcompanhantes++;
@@ -161,6 +197,25 @@ function selecionarValor(valor) {
   gerarPix(valor);
 }
 
+function selecionarContribuicao(destino) {
+  document.getElementById('destinoPresente').value = destino;
+  document.getElementById('valorLivre').value = '';
+  document.getElementById('pixArea').classList.add('hidden');
+  document.querySelectorAll('.valores button').forEach(button => {
+    button.classList.remove('selected');
+    button.setAttribute('aria-pressed', 'false');
+  });
+  document.getElementById('pix-section').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  document.getElementById('valorLivre').focus({ preventScroll: true });
+}
+
+document.getElementById('destinoPresente').addEventListener('change', () => {
+  if (!document.getElementById('pixArea').classList.contains('hidden')) {
+    const valor = Number(document.getElementById('valorLivre').value);
+    if (Number.isFinite(valor) && valor > 0) gerarPix(valor);
+  }
+});
+
 function usarValorLivre() {
   const valor = Number(document.getElementById("valorLivre").value);
   if (!valor || valor <= 0) {
@@ -171,10 +226,17 @@ function usarValorLivre() {
 }
 
 function gerarPix(valor) {
-  const chave = document.getElementById("chavePix").value;
+  document.querySelectorAll('.valores button').forEach(button => {
+    const selected = Number(button.textContent.replace(/[^0-9]/g, '')) === valor;
+    button.classList.toggle('selected', selected);
+    button.setAttribute('aria-pressed', String(selected));
+  });
+  document.getElementById('copy-status').textContent = '';
+  const chave = chavePix;
   const nomeRecebedor = "GUILHERME E RITA";
   const cidade = "MACEIO";
-  const descricao = "Presente casamento";
+  const descricoes = { lar: 'Presente casamento', 'lua-mel': 'Lua de mel', preparativos: 'Preparativos da festa', celebracao: 'Mimos da celebracao' };
+  const descricao = descricoes[document.getElementById('destinoPresente').value] || descricoes.lar;
 
   const pix = gerarPayloadPix({ chave, nomeRecebedor, cidade, valor, descricao });
 
@@ -189,12 +251,17 @@ function gerarPix(valor) {
   });
 }
 
-function copiarPix() {
+async function copiarPix() {
   const campo = document.getElementById("pixCopiaCola");
   campo.select();
   campo.setSelectionRange(0, 99999);
-  document.execCommand("copy");
-  alert("Código Pix copiado!");
+  try {
+    if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(campo.value);
+    else if (!document.execCommand("copy")) throw new Error('Copy failed');
+    document.getElementById('copy-status').textContent = 'Código copiado! Agora é só colar no aplicativo do seu banco.';
+  } catch {
+    document.getElementById('copy-status').textContent = 'Selecione e copie o código acima para continuar.';
+  }
 }
 
 function formatarCampo(id, valor) {
