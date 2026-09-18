@@ -1,5 +1,4 @@
 let contadorAcompanhantes = 0;
-const telefoneWhatsApp = "5582988369610";
 const chavePix = "a4094d9c-fa16-4ec4-bbab-24322b280c4a";
 
 // Vitrine de Presentes com valores estimados de referência
